@@ -1,0 +1,43 @@
+﻿@model CreateCategoryDto
+@{
+    ViewData["Title"] = "CreateCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<div class="page-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Author Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Category Alanı ile ilgili bilgleri eksiksiz doldurmaniz önemlidir...
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName">Category İsmi</label>
+                                <input type="text" asp-for="Name" class="form-control" id="exampleInputName" placeholder="Category Name  Girişi yapınız">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Category Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

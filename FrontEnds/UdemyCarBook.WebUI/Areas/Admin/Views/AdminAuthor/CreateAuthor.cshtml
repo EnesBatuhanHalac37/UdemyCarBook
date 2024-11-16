@@ -1,0 +1,50 @@
+﻿@model CreateAuthorDto
+@{
+    ViewData["Title"] = "CreateAuthor";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Author Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Author Alanı ile ilgili bilgleri eksiksiz doldurmaniz önemlidir...
+                        </p>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputName">Author İsmi</label>
+                                <input type="text" asp-for="Name" class="form-control" id="exampleInputName" placeholder="Author Name  Girişi yapınız">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Author Açıklama</label>
+                                <input type="text" asp-for="Description" class="form-control" id="exampleInputDescription" placeholder="Description  Girişi yapınız">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputImageURL">Image Url</label>
+                                <input type="text" asp-for="ImageUrl" class="form-control" id="exampleInputImageUrl" placeholder="Image URL Girişi yapınız">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Author Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

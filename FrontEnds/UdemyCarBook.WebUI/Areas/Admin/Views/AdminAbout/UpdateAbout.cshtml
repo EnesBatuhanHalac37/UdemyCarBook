@@ -1,0 +1,48 @@
+﻿@model UpdateAboutDto
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">About Güncelleme Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            About ile ilgili bilgleri eksiksiz doldurmaniz önemlidir...
+                            Veri Girişinden Sonra Kaydet Butonuna tıklayarak  Güncelleme işlemi Tamamlayabilirsiniz...
+                        </p>
+                        <form method="post">
+                            <input type="hidden" asp-for="aboutID" />
+                            <div class="form-group">
+                                <label for="exampleInputUpdateTitle">Title</label>
+                                <input type="text" asp-for="title" class="form-control" id="exampleInputUpdateTitle" placeholder="About Title Girisi Yapiniz...">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUpdateDescription">Description</label>
+                                <input type="text" asp-for="description" class="form-control" id="exampleInputUpdateDescription" placeholder="About Description Girisi Yapiniz...">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUpdateVideoDescription">Video Description</label>
+                                <input type="text" asp-for="imageUrl" class="form-control" id="exampleInputUpdateVideoDescription" placeholder="About Video Description Girisi Yapiniz...">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">About Bilgisini Güncelle</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

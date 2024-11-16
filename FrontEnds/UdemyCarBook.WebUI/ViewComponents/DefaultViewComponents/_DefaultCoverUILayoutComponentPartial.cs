@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using UdemyCarBook.Dto.DefaultDtos;
+using UdemyCarBook.Dto.BannerDtos;
 
 namespace UdemyCarBook.WebUI.ViewComponents.DefaultViewComponents
 {
@@ -20,7 +20,7 @@ namespace UdemyCarBook.WebUI.ViewComponents.DefaultViewComponents
             if (responseData.IsSuccessStatusCode)
             {
                 var jsonData=await responseData.Content.ReadAsStringAsync();
-                var value = JsonConvert.DeserializeObject<List<BannerResultDto>>(jsonData);
+                var value = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
                 return View(value);
             }
             return View();
