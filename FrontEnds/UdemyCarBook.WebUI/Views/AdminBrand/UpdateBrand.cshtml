@@ -1,0 +1,36 @@
+﻿@model UpdateBrandDto
+@{
+    ViewData["Title"] = "UpdateBrand";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Araç Güncelleme Girişi</h4>
+                        <p class="card-subtitle mb-4">
+                            Araç ile ilgili bilgleri eksiksiz doldurmaniz önemlidir...
+                            Veri Girişinden Sonra Kaydet Butonuna tıklayarak  Güncelleme işlemi Tamamlayabilirsiniz...
+                        </p>
+                        <form method="post">
+                            <input type="hidden" asp-for="BrandID" />
+                            <div class="form-group">
+                                <label for="exampleInputUpdateName">Marka İsmi</label>
+                                <input type="text" asp-for="Name" class="form-control" id="exampleInputUpdateName" placeholder="Marka İsmi Giriniz...">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Markayı Kaydet</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
